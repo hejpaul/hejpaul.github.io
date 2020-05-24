@@ -1,0 +1,76 @@
+/* WEBFONTS ------------------------------- */
+
+@font-face {
+    font-family: 'SuisseIntl';
+    src: url('webfonts/SuisseIntl-Regular-WebS.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* GENERAL -------------------------------- */
+
+::-moz-selection {
+    background: #D0D0D0;
+    color: #121111;
+}
+
+::selection {
+    background: #D0D0D0;
+    color: #121111;
+}
+
+body {
+    margin: 0;
+    background: #FFF;
+    font-family: 'SuisseIntl', 'Helvetica', 'Arial', sans-serif;
+    font-size: 11pt;
+    letter-spacing: 0.15px;
+    color: #121111;
+}
+
+header {
+    margin: 60px auto auto 30px;
+}
+
+header p {
+    margin: 20px auto 20px;
+    line-height: 15pt;
+}
+
+header a {
+    display: inline-block;
+    text-decoration: none;
+    color: #0BB9ED;
+    margin-top: 5px;
+    border-bottom: 1.5px solid #0BB9ED;
+}
+
+@media (min-width: 400px) {
+    header {
+        margin: 60px auto auto 80px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1F1F1F;
+        color: #F4F4F4;
+        letter-spacing: 0.35px;
+    }
+
+    header a {
+        color: #8FDAF0;
+        border-color: #8FDAF0;
+    }
+
+    ::-moz-selection {
+        background: #A2A2A2;
+        color: #F4F4F4;
+    }
+    
+    ::selection {
+        background: #A2A2A2;
+        color: #F4F4F4;
+    }
+    
+}
