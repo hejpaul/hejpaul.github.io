@@ -7,17 +7,7 @@
     font-style: normal;
 }
 
-/* GENERAL -------------------------------- */
-
-::-moz-selection {
-    background: #D0D0D0;
-    color: #121111;
-}
-
-::selection {
-    background: #D0D0D0;
-    color: #121111;
-}
+/* MAIN -------------------------------- */
 
 body {
     margin: 0;
@@ -42,7 +32,11 @@ header a {
     text-decoration: none;
     color: #0BB9ED;
     margin-top: 5px;
-    border-bottom: 1.5px solid #0BB9ED;
+    border-bottom: 1px solid #0BB9ED;
+}
+
+header a:hover {
+    opacity: .8;
 }
 
 @media (min-width: 400px) {
