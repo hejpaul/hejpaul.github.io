@@ -1,70 +1,98 @@
 /* WEBFONTS ------------------------------- */
 
 @font-face {
-    font-family: 'SuisseIntl';
-    src: url('webfonts/SuisseIntl-Regular-WebS.woff2') format('woff2');
+    font-family: "Zetkin";
+    src: url("https://paul.so/webfonts/Zetkin-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
+}
+
+@font-face {
+    font-family: "Zetkin";
+    src: url("https://paul.so/webfonts/Zetkin-RegularOblique.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* VARIABLES --------------------------- */
+
+:root {
+    --bg-color: #FFF;
+    --text-color: #121111;
+
+    --font: "Zetkin", "Helvetica", "Arial", sans-serif;
+    --font-size: 11pt;
+    --tracking: 0.15px;
+    --line-height: 15pt;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1F1F1F;
+        --text-color: #F4F4F4;
+    
+        --tracking: 0.35px;
+    }
 }
 
 /* MAIN -------------------------------- */
 
 body {
     margin: 0;
-    background: #FFF;
-    font-family: 'SuisseIntl', 'Helvetica', 'Arial', sans-serif;
-    font-size: 11pt;
-    letter-spacing: 0.15px;
-    color: #121111;
+    background: var(--bg-color);
+    font-family: var(--font);
+    font-size: var(--font-size);
+    letter-spacing: var(--tracking);
+    line-height: var(--line-height);
+    font-weight: 400;
+    color: var(--text-color);
 }
 
 header {
-    margin: 60px auto auto 30px;
+    margin-top: 60px;
 }
 
 header p {
-    margin: 20px auto 20px;
-    line-height: 15pt;
+    margin: 20px;
+    width: auto;
+    max-width: 230px;
 }
 
-header a {
+header p.links a {
     display: inline-block;
     text-decoration: none;
-    color: #0BB9ED;
+    color: var(--text-color);
     margin-top: 5px;
-    border-bottom: 1px solid #0BB9ED;
+    margin-left: -5px;
+    padding-left: 5px;
 }
 
-header a:hover {
-    opacity: .8;
+header p.links a:hover {
+    font-style: italic;
 }
 
-@media (min-width: 400px) {
-    header {
-        margin: 60px auto auto 80px;
+/* LARGE SCREENS ----------------------- */
+
+@media (min-width: 380px) {
+    header p {
+        margin: 20px 40px;
+        max-width: 300px;
+    }
+
+    header p.des {
+        font-size: 15pt;
+        line-height: 22pt;
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background: #1F1F1F;
-        color: #F4F4F4;
-        letter-spacing: 0.35px;
+@media (min-width: 600px) {
+    header p {
+        margin: 20px 60px;
+        max-width: 370px;
     }
 
-    header a {
-        color: #8FDAF0;
-        border-color: #8FDAF0;
+    header p.des {
+        font-size: 18pt;
+        line-height: 25pt;
     }
-
-    ::-moz-selection {
-        background: #A2A2A2;
-        color: #F4F4F4;
-    }
-    
-    ::selection {
-        background: #A2A2A2;
-        color: #F4F4F4;
-    }
-    
 }
