@@ -17,7 +17,7 @@
 /* VARIABLES --------------------------- */
 
 :root {
-    --bg-color: #FFF;
+    --bg-color: #fff;
     --text-color: #121111;
 
     --font: "Zetkin", "Helvetica", "Arial", sans-serif;
@@ -28,8 +28,8 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-color: #1F1F1F;
-        --text-color: #F4F4F4;
+        --bg-color: #1f1f1f;
+        --text-color: #f4f4f4;
     
         --tracking: 0.35px;
     }
@@ -55,7 +55,7 @@ header {
 header p {
     margin: 20px;
     width: auto;
-    max-width: 230px;
+    max-width: 250px;
 }
 
 header p.links a {
@@ -76,7 +76,7 @@ header p.links a:hover {
 @media (min-width: 380px) {
     header p {
         margin: 20px 40px;
-        max-width: 300px;
+        max-width: 330px;
     }
 
     header p.des {
@@ -88,7 +88,7 @@ header p.links a:hover {
 @media (min-width: 600px) {
     header p {
         margin: 20px 60px;
-        max-width: 370px;
+        max-width: 390px;
     }
 
     header p.des {
