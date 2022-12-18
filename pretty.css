@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: "Zetkin";
-    src: url("https://paul.so/webfonts/Zetkin-Regular.woff2") format("woff2");
+    src: url("https://hejpaul.github.io/webfonts/Zetkin-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Zetkin";
-    src: url("https://paul.so/webfonts/Zetkin-RegularOblique.woff2") format("woff2");
+    src: url("https://hejpaul.github.io/webfonts/Zetkin-RegularOblique.woff2") format("woff2");
     font-weight: 400;
     font-style: italic;
 }
